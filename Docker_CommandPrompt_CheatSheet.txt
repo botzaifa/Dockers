@@ -1,0 +1,25 @@
+Docker Command Prompt Codes/Commands:
+
+1. Creating/Building an Image file:
+	docker build -t movie-app .
+
+2. Running the Image file:
+	docker run -p 8501:8501 movie-app:latest
+
+3. Stoping the Run:
+	docker stop 61287298d82b74abd1f34663a7a57de301ea3d0a52a0f98e4831458e205447db
+
+4. Renaming the Image file:
+	docker tag movie-app botzaifa/movie_recommend_sys-app 
+
+5. Viewing all the images:
+	docker images
+
+6. Pushing the Container/Image file on Docker-Hub:
+	docker push botzaifa/movie_recommend_sys-app:latest
+
+7. Deleting the uploaded file from Docker desktop:
+	docker image rm -f movie-app:latest
+
+8. Pulling the container from the Docker-Hub to the Local:
+	docker pull botzaifa/movie_recommend_sys-app:latest
